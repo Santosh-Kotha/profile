@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=display-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <i class="fa fa-bars" onclick="showMenu()" id="bars"></i>
+            <h1  id="h">Welcome to My Profile</h1>
+        </div>
+        <div class="section">
+            <div class="image">
+                <img src="/profile/Santosh.jpg">
+            </div>
+            <div class="objective">
+            <h3>Objective:</h3>
+            <p>To associate myself with an
+                organization that provides a
+                challenging job and an opportunity to
+                prove innovative skills and diligent
+                work.</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="links" id="links">
+            <div class="leftcol">
+                <ul >
+                    <li><a href="career.html" target="iframe_a"  onclick="closeMenu()">Career Experience</a></li>
+                    <li><a href="projects.html" target="iframe_a" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="skillset.html" target="iframe_a" onclick="closeMenu()">Skill Set</a></li>
+                    <li><a href="education.html" target="iframe_a" onclick="closeMenu()">Education</a></li>
+                </ul>
+            </div>
+            <div class="rightcol">
+                <ul>
+                    <li><a href="memberships.html" target="iframe_a" onclick="closeMenu()">Memberships</a></li>
+                    <li><a href="traits.html" target="iframe_a" onclick="closeMenu()">Personal Traits</a></li>
+                    <li><a href="acheivements.html" target="iframe_a" onclick="closeMenu()">Acheivements</a></li>
+                    <li><a href="contact.html" target="iframe_a" onclick="closeMenu()">Personal Details</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="frame" id="frame">
+                <iframe src="demo.html" name="iframe_a"></iframe> 
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li style="color:white">Get in Touch:</li>
+                <li><a href="https://www.facebook.com/santosh.kalki.143" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" style="color:rgb(72, 183, 72);font-size: 30px;"></i></a></li>
+                <li><a href="https://www.instagram.com/call_me__san/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color:rgb(72, 183, 72);font-size: 30px;"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/santosh-kotha-390292199/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" style="color:rgb(72, 183, 72);font-size: 30px;"></i></a></li>
+                <li><a href="https://github.com/Santosh-Kotha" target="_blank"><i class="fa fa-github" aria-hidden="true" style="color:rgb(72, 183, 72);font-size: 30px;"></i></a></li>
+            </ul>
+            <p>K SANTOSH KUMAR KOTHA</p>
+        </div>
+
+        <script>
+            var navlinks = document.getElementById("links");
+            var bar = document.getElementById("bars");
+            var fr = document.getElementById("frame");
+            function showMenu(){
+                var w = parseInt(window.innerWidth);
+                if(w<=750){
+                navlinks.style.marginLeft="0";
+                bar.style.marginLeft="25%";
+                fr.style.display="none";
+                }
+            }
+            function closeMenu(){
+                var w = parseInt(window.innerWidth);
+                if(w<=750){
+                navlinks.style.marginLeft="100%";
+                bar.style.marginLeft="0";
+                fr.style.display="block";
+                }
+            }
+        </script>
+    </body>
+</html>

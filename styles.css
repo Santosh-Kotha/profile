@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:100vh;
+    background-color: black;
+    font-family: "Audiowide", sans-serif;
+}
+.header {
+    background-color: rgb(0, 0, 0);
+    height:6em;
+}
+.header h1{
+    text-align: center;
+    padding:25px 0;
+    color:rgb(72, 183, 72);
+}
+
+/*-----section-----*/
+.section{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+.image{
+    display:flex;
+    width:40%;
+}
+.image img{
+    position: relative;
+    width:10em;
+    height:10em;
+    margin-left: 11em;;
+    border-radius: 50%;
+    border:3px solid rgb(72, 183, 72);
+}
+
+.objective h3{
+    position: relative;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    color:rgb(72, 183, 72);
+}
+.objective p {
+    color:white;
+    position: relative;
+    margin-left: 5em;
+    margin-right: 2em;
+}
+
+/*-------------------middle Section------*/
+.middle{
+    display:flex;
+    width:100%;
+    height:50%;
+}
+.links{
+    width:40%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.links ul li{
+    list-style-type: none;
+    padding:15px 50px;
+    margin-top: 4%;
+}
+.links ul li a{
+    text-decoration:none;
+    border:2px solid rgb(72, 183, 72);
+    padding:10px 12px;
+    border-radius: 25px;
+    color:white;
+}
+.links ul li a:hover{
+    text-decoration:none;
+    border:2px solid white;
+    padding:10px 12px;
+    border-radius: 25px;
+    background-color:rgb(72, 183, 72);
+    color:black;
+}
+.frame{
+    display:flex;
+    width:60%;
+
+}
+.frame iframe{
+    width:80%;
+    position: relative;
+    left:5%;
+    border:3px solid rgb(72, 183, 72);
+}
+.footer{
+    width:25%;
+    margin:2%;
+    height:5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.footer ul li{
+    display:inline-block;
+    padding:5px;
+}
+.footer p{
+    color:rgb(72, 183, 72);
+    padding-top: 1%;
+    font-size: 0.75em;
+}
+
+@media(max-width:1400px){
+    body{
+        margin-top: 2%;
+        height:120vh;
+    }
+    .middle{
+        display: block;
+    }
+    .links{
+        width:100%
+    }
+    .frame{
+        display: flex;
+        width:100%;
+        margin:auto;
+        height:60%;
+        margin-top: 5%;
+    }
+    .frame iframe{
+        width:90%;
+    }
+    .footer{
+        width:50%;
+        margin-top:20%;
+    }
+}
+
+@media(max-width:750px){
+    .header{
+        overflow: hidden;
+    }
+    .header h1{
+        font-size: 1.5em;
+        padding:0 0;
+        text-align: center;
+        margin-left: 1.5em;
+    }
+    .section{
+        display: block;
+        overflow: hidden;
+    }
+    .objective h3{
+        position: relative;
+        text-align: center;
+    }
+    .fa{
+        color:rgb(72, 183, 72);
+        position: relative;
+        left:95%;
+        top:50%;
+        padding:1em 1em 0 0;
+        font-size: 20px !important;
+    }
+    .middle{
+        overflow: hidden;
+        display:block;
+        width:100%;
+        height:50%;
+    }
+    .image{
+        display:flex;
+        width:100%;
+        margin: auto;
+    }
+    .image img{
+        margin-left: 40%;
+        margin-right: auto;
+        width:25vw;
+        height:25vw;
+    }
+    .links{
+        display:block;
+        width:100%;
+        margin-left: 100%;
+        margin-top: -2%;
+        z-index: 2;
+    }   
+    .links ul li{
+        list-style-type: none;
+        padding:15px 50px;
+    }
+    .links ul li a{
+        position: relative;
+        text-decoration:none;
+        border:2px solid rgb(72, 183, 72);
+        padding:10px 12px;
+        border-radius: 25px;
+        color:white;
+        float: left;
+        font-size: .8em;
+    }
+    .links ul li a:hover{
+        text-decoration:none;
+        border:2px solid white;
+        padding:10px 12px;
+        border-radius: 25px;
+        background-color:rgb(72, 183, 72);
+        color:black;
+    }
+    .frame{
+        position: absolute;
+        display:block;
+        width:100%;
+        top:50%;
+    }
+    .frame iframe{
+        width:90%;
+        height:300px;
+        position: relative;
+        border:3px solid rgb(72, 183, 72);
+    }
+    .footer{
+        position: absolute;
+        display:block;
+        width:100%;
+        margin:2%;
+        height:5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        top:90%;
+    }
+    .footer ul li{
+        display:inline-block;
+    }
+    
+}
+
+@media(max-width:420px){
+    .header h1{
+        font-size:1.25em;
+    }
+}
